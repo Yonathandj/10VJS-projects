@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    color: rebeccapurple;
+    background-color: rgb(245, 188, 245);
+}
+
+.active {
+    position: fixed;
+    top: -10vh;
+    animation: fall 4s linear;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh);
+    }
+}
