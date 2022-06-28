@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.4s;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(216, 216, 216);
+}
+
+body.active {
+    background-color: rgb(24, 24, 24);
+}
+body.active h4, body.active p {
+    color: rgb(216, 216, 216);    
+}
+body.active button {
+    color: rgb(24, 24, 24);
+    background-color: rgb(216, 216, 216);
+}
+
+h4 {
+    font-size: 3rem;
+    margin-bottom: 0.4em;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 0.2em;
+    text-transform: lowercase;
+}
+
+button {
+    top: 10px;
+    right: 10px;
+    border: none;
+    position: fixed;
+    color: white;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 0.4em 0.8em;
+    transition: transform 0.02s;
+    background-color: #2C3639;
+}
+
+button:active {
+    transform: scale(0.92);
+}
