@@ -6,19 +6,20 @@
 
 body {
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     color: rebeccapurple;
     background-color: rgb(245, 188, 245);
 }
 
 .active {
-    position: fixed;
     top: -10vh;
+    position: fixed;
+    font-size: 2rem;
     animation: fall 4s linear;
 }
 
 @keyframes fall {
     to {
-        transform: translateY(110vh);
+        transform: translateY(120vh);
     }
 }
